@@ -1,189 +1,175 @@
-# README Template
-
-这个模板适用于需要清晰阐述复杂系统、框架或算法的项目。它的结构旨在引导读者从宏观愿景到微观实现，逐步理解项目的核心价值。
-
-**使用说明:**
-1.  复制以下 Markdown 内容到您的 `README.md` 文件中。
-2.  查找并替换所有 `[占位符]` 内容，例如 `[项目名称]`、`[项目链接]` 等。
-3.  根据您项目的具体情况，调整或删减某些章节。
----
 
 <div align="center">
-  <!-- 徽章: 替换为你自己的徽章。shields.io 是一个很好的工具 -->
-  <img src="https://img.shields.io/badge/Framework-[框架名称]-purple?style=for-the-badge&logo=github" alt="Framework Badge">
-  <img src="https://img.shields.io/badge/Language-[主要语言]-blue?style=for-the-badge&logo=python" alt="Language Badge">
-  <img src="https://img.shields.io/badge/Paradigm-[核心范式]-orange?style=for-the-badge&logo=openai" alt="Paradigm Badge">
-  <img src="https://img.shields.io/github/stars/cotix-ai/README-Template?style=for-the-badge&color=gold" alt="Stars Badge">
+  <!-- Badges: Replace with your own. shields.io is a great tool -->
+  <img src="https://img.shields.io/badge/Framework-PyTorch-purple?style=for-the-badge&logo=pytorch" alt="Framework Badge">
+  <img src="https://img.shields.io/badge/Language-Python-blue?style=for-the-badge&logo=python" alt="Language Badge">
+  <img src="https://img.shields.io/badge/Paradigm-Lifelong_Learning-orange?style=for-the-badge&logo=openai" alt="Paradigm Badge">
+  <img src="https://img.shields.io/github/stars/cotix-ai/MyGO?style=for-the-badge&color=gold" alt="Stars Badge">
 </div>
 
 <br>
 
 <h1 align="center">
-  [项目名称]: [项目的一句话核心描述]
+  MyGO: Memory Yielding Generative Offline-consolidation for Lifelong Learning Systems
 </h1>
 
 <p align="center">
-  <i>[项目的Slogan或核心价值主张，例如：弥合快速生成与深度结构化推理之间的鸿沟]</i>
+  <i>Simulating the brain's "wake-sleep" cycle for continual learning without forgetting.</i>
 </p>
 
 <br>
 
 >[!IMPORTANT]
-> **核心提示**: [简要说明该项目最关键的特性或用途。例如：这是一个通用的、即插即用的引擎，旨在解决复杂的XX问题。]
+> **Core Idea**: MyGO is a neuro-inspired lifelong learning framework that leverages generative replay (during a "sleep" phase) to consolidate old knowledge, effectively mitigating catastrophic forgetting when learning new tasks.
 
-## 目录
+## Table of Contents
 
-- [✨ 项目简介](#-项目简介)
-- [💡 核心设计理念](#-核心设计理念)
-- [🧠 架构核心](#-架构核心)
-- [🧩 核心组件详解](#-核心组件详解)
-    - [组件一：[组件名称]
-    - [组件二：[组件名称]
-    - [组件三：[组件名称]
-- [🔄 工作流程](#-工作流程)
-- [🚀 独特优势与创新](#-独特优势与创新)
-- [🛠️ 快速开始](#️-快速开始)
-- [🤝 如何贡献](#-如何贡献)
-- [📄 许可证](#-许可证)
-
-<br>
-
----
-
-## ✨ 项目简介
-
-本项目介绍了 **[项目名称]**，一个新颖的框架，它通过将 [技术A] 与强大的 [技术B] 相结合，显著提升了 [某个领域] 的能力。
-
-**[项目名称]** 重新定义了 [解决问题的方式]，将其视为一个 [核心比喻，例如：在庞大的可能性树中进行搜索]，而非简单的线性过程。它超越了传统方法的局限性（例如：容易陷入局部最优解且难以自我纠正）。本架构协同了 [技术A] 的 [优点] 与 [技术B] 的 [优点]，创造出一个高度健壮和审慎的系统，能够探索多种解决方案路径、评估其潜力，并最终收敛于最优解。
+- [✨ Introduction](#-introduction)
+- [💡 Core Design Philosophy](#-core-design-philosophy)
+- [🧠 Core Architecture](#-core-architecture)
+- [🧩 Core Components Explained](#-core-components-explained)
+    - [Component 1: Neocortex Net](#component-1-neocortex-net)
+    - [Component 2: Generative Memory Module](#component-2-generative-memory-module)
+    - [Component 3: Offline Consolidation (Sleep Phase)](#component-3-offline-consolidation-sleep-phase)
+- [🔄 Workflow](#-workflow)
+- [🚀 Unique Advantages & Innovations](#-unique-advantages--innovations)
+- [🛠️ Quick Start](#️-quick-start)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [📄 License](#-license)
 
 <br>
 
 ---
 
-## 💡 核心设计理念
+## ✨ Introduction
 
-**[项目名称]** 不仅仅是另一种 [现有技术或方法]，它代表了我们组织 [某个过程] 方式的根本性转变。我们相信，[某个领域] 的下一次飞跃需要系统能够 [核心能力，例如：探索、评估和修剪自身的思路]，就像人类一样。
+This project introduces **MyGO (Memory Yielding Generative Offline-consolidation)**, a novel framework that significantly enhances the capabilities of **neural networks in sequential task learning** by combining a **multi-task architecture** with powerful **Generative Adversarial Networks (GANs)**.
 
-> "[引用一句能体现项目愿景或理念的话，例如：AI推理的未来在于从概率性文本延续转向结构化的状态空间搜索。]"
-
-本设计旨在克服传统方法在解决多步骤问题时的固有局D限，在这些问题中，一个微小的早期错误就可能导致整个解决方案的失败。
+**MyGO** redefines the **continual learning process** by treating it as an **alternating cycle of "wakeful learning" and "sleep consolidation"**, rather than a simple sequential fine-tuning process. It overcomes the limitations of traditional methods (like direct fine-tuning), which suffer from catastrophically forgetting old knowledge when learning new information. This architecture synergizes the **rapid adaptation to new tasks** with the **generative replay of old knowledge**, creating a highly robust system that can continuously learn and grow without accessing old data.
 
 <br>
 
 ---
 
-## 🧠 架构核心
+## 💡 Core Design Philosophy
 
-**[架构核心名称，例如：认知循环]** 是 **[项目名称]** 架构的基石，也是整个 [流程，例如：推理过程] 的**“单一事实来源”**。该机制将系统从 [某种限制，例如：单一、不可逆的思维链] 的束缚中解放出来。
+**MyGO** is not just another **continual learning algorithm**; it represents a fundamental shift in how we organize the **model training process**. We believe that achieving true lifelong learning requires systems capable of **periodically "recalling" and "consolidating" past learnings without relying on the original data**, much like the human brain.
 
-**核心功能:**
-系统通过协调一个由多个 [角色/模块] 组成的“团队”来工作，每个角色都有明确的职责：
-1.  **[角色一]**: [简述其功能，例如：从当前状态提出一系列合理的下一步行动]。
-2.  **[角色二]**: [简述其功能，例如：评估任何给定状态的质量或“前景”]。
-3.  **[角色三]**: [简述其功能，例如：智能地平衡探索未知路径和利用已知最优路径]。
+> "True intelligence lies not only in learning quickly but also in forgetting slowly. By simulating memory consolidation during sleep, we enable AI to achieve this."
 
-因此，最终产出的每一步都不是基于一次冲动的猜测，而是经过了成千上万次模拟“微思考”的验证，这些“微思考”探索并评估了无数种可能性。
+This design is engineered to overcome the inherent limitations of traditional methods in solving multi-step, sequential problems, where adapting to a new task often comes at the cost of past capabilities.
 
 <br>
 
 ---
 
-## 🧩 核心组件详解
+## 🧠 Core Architecture
 
-**[项目名称]** 中的不同组件各司其职，通过明确的劳动分工，共同实现一个整体性的智能流程。
+The **Wake-Sleep Cycle** is the cornerstone of the **MyGO** architecture and the **"single source of truth"** for the entire **knowledge accumulation and consolidation process**. This mechanism liberates the system from the shackles of **catastrophic forgetting**.
 
-### 组件一：[组件名称] (角色：[例如：提议者])
-*   **目标:** [该组件的核心目标，例如：从当前状态生成一组多样化且高质量的候选行动]。
-*   **实现:** [简述其技术实现。例如：在`ExampleTask`中，这由`get_possible_actions`函数处理。它查询一个 [模型/服务] 以获取`top_k`个下一步操作及其概率。这为搜索提供了原始材料，定义了从任何给定点“可能”发生什么。]
+**Core Functionality:**
+The system operates by coordinating a "team" of specialized modules, each with a clear responsibility:
+1.  **Wake Phase**: **Rapidly learn new knowledge**. The system focuses on the current task, freezing the general feature extractor and training only a new task-specific "head," while also training a generative model to "memorize" the current task's data distribution.
+2.  **Sleep Phase**: **Consolidate all knowledge offline**. The system enters an "offline" mode, using the generative models from all tasks to produce "pseudo-data" (dreams). It then uses knowledge distillation to integrate all old and new knowledge into a unified, general feature extractor.
+3.  **Memory Storage**: **Efficiently compress experience**. Instead of storing massive old datasets, the system retains only lightweight generative models (`G_mem`), dramatically reducing storage costs.
 
-### 组件二：[组件名称] (角色：[例如：评估者])
-*   **目标:** [该组件的核心目标，例如：为任何状态提供一个可靠的启发式评分，引导搜索走向更有希望的区域]。
-*   **实现:** [简述其技术实现。例如：`get_state_value`函数查询一个专门的 [模型/服务]，要求它对部分或完整的解决方案进行评分（例如，0.0到1.0）。这个分数至关重要，它扮演了系统的“直觉”角色，告诉搜索算法哪些路径值得进一步探索。]
-
-### 组件三：[组件名称] (角色：[例如：仲裁者])
-*   **目标:** [该组件的核心目标，例如：作为系统的心脏，整合来自其他组件的信息并做出最终决策]。
-*   **实现:** [简述其技术实现。例如：`CoreAlgorithm`类及其`calculate_score`方法实现了一个 [核心算法] 的变体。这个公式是决策过程的核心，它智能地结合了来自 [组件一] 的先验信息、来自 [组件二] 的反馈，以及其他统计数据，以决定下一步要探索哪个分支。]
+Thus, every model update is not a brute-force overwrite of old knowledge but a thoughtful integration of knowledge, blending insights from new tasks with replays of past experiences.
 
 <br>
 
 ---
 
-## 🔄 工作流程
+## 🧩 Core Components Explained
 
-**[项目名称]** 的运作遵循一个清晰的、迭代的循环，模拟了一个结构化的处理过程：
+The different components in **MyGO** have distinct roles, working together through a clear division of labor to achieve a holistic, intelligent process.
 
-1.  **选择 (Selection):** 算法从根节点（初始问题）开始，通过反复选择得分最高的子节点向下遍历。
-2.  **扩展 (Expansion):** 到达一个未探索的叶子节点时，调用 **[组件一]** 来生成所有可能的下一步，从而扩展决策树。
-3.  **评估 (Evaluation/Simulation):** 对新节点进行快速评估。**[组件二]** 会对这个新分支的潜力进行打分。
-4.  **反向传播 (Backpropagation):** 将评估分数传回至根节点，更新路径上所有节点的统计信息（如访问次数和平均回报）。
-5.  **收敛/终止 (Termination):** 重复此循环指定的次数。最终的答案通过选择从根节点出发访问次数最多的路径来构建，这代表了经过最充分验证的推理路线。
+### Component 1: Neocortex Net (Role: The Learner)
+*   **Objective:** To serve as the central knowledge repository, containing a shared feature extractor (`features`) and multiple task-specific classifiers (`classifiers`).
+*   **Implementation:** In the `Neocortex_Net` class, the `features` module learns cross-task, general-purpose representations. Whenever a new task is encountered, the `add_task_head` method dynamically adds a new classifier. This multi-head architecture is fundamental to isolating and organizing knowledge from different tasks.
 
-<br>
+### Component 2: Generative Memory Module (Role: The Memory Encoder)
+*   **Objective:** To create a compact, generative model for each task's data distribution, enabling future "replay" of this data without needing to store the original samples.
+*   **Implementation:** The `Generator` and `Discriminator` classes form a conditional Generative Adversarial Network (cGAN). During the wake phase, it is trained to mimic the data of the current task. Once trained, this lightweight `Generator` (`G_mem`) becomes a permanent memory proxy for that task.
 
----
-
-## 🚀 独特优势与创新
-
-尽管现有的 [某类技术，例如：高级提示工程] 已经改进了 [某个问题]，但它们仍然在 [某个限制，例如：单次前向传递] 的模式下运行。在 **鲁棒性、错误纠正和克服初始错误** 方面，仍有巨大的改进空间。
-
-**这正是 [项目名称] 旨在深入探索和解决的方向。**
-
-**[项目名称]** 通过其独特的 **[核心架构描述，例如：MCTS驱动的多智能体架构]**，提供了以下优势：
-
-*   **显著降低错误率:** [解释原因，例如：通过主动探索和修剪不良路径，系统不太可能沿错误逻辑走到底。]
-*   **真正的“跳出思维定势”:** [解释原因，例如：搜索算法可以探索那些不那么明显但可能正确的路径，这些路径在贪心策略下会被忽略。]
-*   **克服局部最优陷阱:** [解释原因，例如：系统可以从一个起初看起来很有希望但后来被评估为死胡同的路径中“回溯”，这是标准模型所缺乏的能力。]
-*   **可调的性能:** [解释原因，例如：计算成本和解决方案质量之间的权衡变得明确。对于更难的问题，只需增加`迭代次数`即可进行更深入的“思考”。]
+### Component 3: Offline Consolidation (Sleep Phase) (Role: The Knowledge Integrator)
+*   **Objective:** To act as the heart of the system, integrating new and old knowledge to update the shared feature extractor, making it proficient across all seen tasks and thus combating forgetting.
+*   **Implementation:** The `sleep_phase` function is the core of this process. It creates a "teacher" model (a temporary model containing the latest task knowledge) and a "student" model (the main `M_ctx`). By sampling "dream" data from all past `G_mem`s and using the teacher's outputs to guide the student's learning (knowledge distillation), it achieves a forgetting-free update of the shared feature extractor.
 
 <br>
 
 ---
 
-## 🛠️ 快速开始
+## 🔄 Workflow
 
-这一部分应包括如何设置和运行您的项目的说明。
+The operation of **MyGO** follows a clear, iterative "wake-sleep" cycle that simulates a structured learning and consolidation process:
 
-### 1. 先决条件
+1.  **Wake Phase - Learning:** When a new task `T` arrives, the system freezes the shared feature extractor `M_ctx.features`. It trains only the new task head `M_ctx.classifiers[T]` to rapidly adapt to the new data.
+2.  **Wake Phase - Memorizing:** Concurrently, a generative model `G_mem[T]`, specifically designed for task `T`, is trained to capture its data distribution.
+3.  **Sleep Phase - Dreaming:** The system enters the sleep phase. It randomly samples "pseudo" data by drawing from the generative models of the current and all past tasks (`G_mem[0]...G_mem[T]`).
+4.  **Sleep Phase - Consolidation:** Using a "teacher" model that embodies all knowledge (old and new), the "student" model `M_ctx`'s shared feature extractor is trained via knowledge distillation (using MSE loss). This allows `M_ctx` to assimilate all knowledge without accessing any real old data.
+5.  **Loop:** The system "wakes up," ready for the next task, and repeats the cycle. The final `M_ctx` model maintains high performance across all tasks it has learned.
 
-*   [依赖项 A, e.g., Python 3.8+]
-*   [依赖项 B, e.g., Poetry 或 Pip]
-*   [依赖项 C, e.g., API 密钥配置]
+<br>
 
-### 2. 安装
+---
+
+## 🚀 Unique Advantages & Innovations
+
+While existing methods like **Finetuning** can adapt a model to new tasks, they do so at the cost of **catastrophic forgetting**, where the model completely loses its ability to perform old tasks.
+
+**This is precisely the gap that MyGO aims to explore and solve.**
+
+**MyGO**, through its unique **generative replay and knowledge distillation** architecture, offers the following advantages:
+
+*   **Significant Resistance to Catastrophic Forgetting:** By "rehearsing" old tasks during the sleep phase, the model continuously reinforces learned knowledge, preventing it from being overwritten by new information.
+*   **No Need to Store Old Data:** Traditional replay methods require storing all historical data, which is prohibitively expensive. MyGO only needs to store lightweight generators, achieving massive storage compression.
+*   **Knowledge Integration, Not Replacement:** The knowledge distillation process in the sleep phase enables the shared feature extractor to learn more general and robust representations that better serve all tasks.
+*   **Biologically Inspired Interpretability:** The "wake-sleep" analogy provides an intuitive and logical framework for the complex process of continual learning.
+
+<br>
+
+---
+
+## 🛠️ Quick Start
+
+This section should include instructions on how to set up and run your project.
+
+### 1. Prerequisites
+
+*   Python 3.8+
+*   PyTorch
+*   TorchVision
+*   NumPy
+
+### 2. Installation
 
 ```bash
-# 克隆仓库
-git clone https://github.com/[你的GitHub用户名]/[你的仓库名].git
-cd [你的仓库名]
+# Clone the repository
+git clone https://github.com/Cotix-AI/MyGO
+cd MyGO
 
-# 安装依赖
-pip install -r requirements.txt
-# 或者使用 poetry
-# poetry install
+# Install dependencies
+pip install torch torchvision numpy
 ```
 
-### 3. 配置
+### 3. Configuration
 
-1.  复制 `.env.example` 文件为 `.env`。
-2.  在 `.env` 文件中填入你的配置，例如 API 密钥：
-    ```
-    API_KEY="sk-..."
-    ```
+This project requires no additional configuration and can be run directly.
 
-### 4. 运行示例
+### 4. Running the Example
+
+To launch the MyGO experiment and the comparative finetuning baseline, run the main script:
 
 ```bash
-python main.py [参数]
+python main.py
 ```
+
+You will see terminal output showing the learning performance after each task. The MyGO model will maintain high accuracy across all learned tasks, while the finetuning baseline's accuracy on old tasks will drop sharply, clearly demonstrating the problem of catastrophic forgetting.
 
 <br>
 
 ---
 
-## 🤝 如何贡献
+## 🤝 How to Contribute
 
-我们欢迎并鼓励对本项目的贡献！如果您有任何想法、建议或发现错误，请随时提交 Pull Request 或创建 Issue。
-
-请阅读我们的 [贡献指南](./CONTRIBUTING.md) 以了解详细信息。
-
-<br>
+We welcome and encourage contributions to this project! If you have any ideas, suggestions, or find a bug, please feel free to submit a Pull Request or create an Issue.
